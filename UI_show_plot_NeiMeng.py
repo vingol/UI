@@ -226,7 +226,7 @@ class PlotCanvas(FigureCanvas):
             self.draw()
 
 
-class Ui_MainWindow_show_plot(object):
+class Ui_MainWindow_show_plot_NeiMeng(object):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -255,7 +255,6 @@ class Ui_MainWindow_show_plot(object):
         self.pushButton3.setGeometry(QtCore.QRect(450, 450, 150, 32))
         self.pushButton3.setObjectName("pushButton3")
 
-        #
         # # 增加数据源选择
         #
         # self.layoutWidget1 = QtWidgets.QWidget(self.centralwidget)
@@ -291,7 +290,7 @@ class Ui_MainWindow_show_plot(object):
         self.label_9.setObjectName("label_9")
         self.horizontalLayout_3.addWidget(self.label_9)
         self.dateTimeEdit_start = QtWidgets.QDateTimeEdit(self.layoutWidget)
-        self.dateTimeEdit_start.setDateTime(QtCore.QDateTime(QtCore.QDate(2018, 6, 1), QtCore.QTime(0, 0, 0)))
+        self.dateTimeEdit_start.setDateTime(QtCore.QDateTime(QtCore.QDate(2020, 6, 1), QtCore.QTime(0, 0, 0)))
         self.dateTimeEdit_start.setObjectName("dateTimeEdit_start")
         self.horizontalLayout_3.addWidget(self.dateTimeEdit_start)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
@@ -301,7 +300,7 @@ class Ui_MainWindow_show_plot(object):
         self.label_8.setObjectName("label_8")
         self.horizontalLayout_2.addWidget(self.label_8)
         self.dateTimeEdit_end = QtWidgets.QDateTimeEdit(self.layoutWidget)
-        self.dateTimeEdit_end.setDateTime(QtCore.QDateTime(QtCore.QDate(2018, 6, 2), QtCore.QTime(0, 0, 0)))
+        self.dateTimeEdit_end.setDateTime(QtCore.QDateTime(QtCore.QDate(2020, 6, 2), QtCore.QTime(0, 0, 0)))
         self.dateTimeEdit_end.setObjectName("dateTimeEdit_end")
         self.horizontalLayout_2.addWidget(self.dateTimeEdit_end)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
@@ -327,42 +326,7 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_station.addItem("")
         self.comboBox_station.addItem("")
         self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
-        self.comboBox_station.addItem("")
+
         self.horizontalLayout.addWidget(self.comboBox_station)
         self.verticalLayout_2.addLayout(self.horizontalLayout)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
@@ -376,8 +340,7 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_datatype.setItemText(0, "")
         self.comboBox_datatype.addItem("")
         self.comboBox_datatype.addItem("")
-        self.comboBox_datatype.addItem("")
-        self.comboBox_datatype.addItem("")
+
         # self.comboBox_datatype.addItem("")
         self.horizontalLayout_4.addWidget(self.comboBox_datatype)
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
@@ -403,42 +366,7 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_station_added.addItem("")
         self.comboBox_station_added.addItem("")
         self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
-        self.comboBox_station_added.addItem("")
+
         self.horizontalLayout_added.addWidget(self.comboBox_station_added)
         self.verticalLayout_2_added.addLayout(self.horizontalLayout_added)
         self.horizontalLayout_4_added = QtWidgets.QHBoxLayout()
@@ -452,8 +380,7 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_datatype_added.setItemText(0, "")
         self.comboBox_datatype_added.addItem("")
         self.comboBox_datatype_added.addItem("")
-        self.comboBox_datatype_added.addItem("")
-        self.comboBox_datatype_added.addItem("")
+
         # self.comboBox_datatype.addItem("")
         self.horizontalLayout_4_added.addWidget(self.comboBox_datatype_added)
         self.verticalLayout_2_added.addLayout(self.horizontalLayout_4_added)
@@ -493,8 +420,6 @@ class Ui_MainWindow_show_plot(object):
 
         self.pushButton2.clicked.connect(self.show_gif)
 
-        self.pushButton3.clicked.connect(self.abnormal_detection)
-
         # self.pushButton_2.clicked.connect(self.show_dir)
 
         self.retranslateUi(MainWindow)
@@ -504,7 +429,7 @@ class Ui_MainWindow_show_plot(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow",
-                                      "<html><head/><body><p><span style=\" font-size:24pt;\">风电/光伏数据展示（吉林）</span></p><p><br/></p></body></html>"))
+                                      "<html><head/><body><p><span style=\" font-size:24pt;\">风电/光伏数据展示（内蒙）</span></p><p><br/></p></body></html>"))
 
         self.label_2.setText(_translate("MainWindow",
                                         "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">电站：</span></p></body></html>"))
@@ -513,48 +438,10 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_station.setItemText(3, _translate("MainWindow", "风电3"))
         self.comboBox_station.setItemText(4, _translate("MainWindow", "风电4"))
         self.comboBox_station.setItemText(5, _translate("MainWindow", "风电5"))
-        self.comboBox_station.setItemText(6, _translate("MainWindow", "风电6"))
-        self.comboBox_station.setItemText(7, _translate("MainWindow", "风电7"))
-        self.comboBox_station.setItemText(8, _translate("MainWindow", "风电8"))
-        self.comboBox_station.setItemText(9, _translate("MainWindow", "风电9"))
-        self.comboBox_station.setItemText(10, _translate("MainWindow", "风电10"))
-        self.comboBox_station.setItemText(11, _translate("MainWindow", "风电11"))
-        self.comboBox_station.setItemText(12, _translate("MainWindow", "风电12"))
-        self.comboBox_station.setItemText(13, _translate("MainWindow", "风电13"))
-        self.comboBox_station.setItemText(14, _translate("MainWindow", "风电14"))
-        self.comboBox_station.setItemText(15, _translate("MainWindow", "风电15"))
-        self.comboBox_station.setItemText(16, _translate("MainWindow", "风电16"))
-        self.comboBox_station.setItemText(17, _translate("MainWindow", "风电17"))
-        self.comboBox_station.setItemText(18, _translate("MainWindow", "风电18"))
-        self.comboBox_station.setItemText(19, _translate("MainWindow", "风电19"))
-        self.comboBox_station.setItemText(20, _translate("MainWindow", "风电20"))
-        self.comboBox_station.setItemText(21, _translate("MainWindow", "光伏1"))
-        self.comboBox_station.setItemText(22, _translate("MainWindow", "光伏2"))
-        self.comboBox_station.setItemText(23, _translate("MainWindow", "光伏3"))
-        self.comboBox_station.setItemText(24, _translate("MainWindow", "光伏4"))
-        self.comboBox_station.setItemText(25, _translate("MainWindow", "光伏5"))
-        self.comboBox_station.setItemText(26, _translate("MainWindow", "光伏6"))
-        self.comboBox_station.setItemText(27, _translate("MainWindow", "光伏7"))
-        self.comboBox_station.setItemText(28, _translate("MainWindow", "光伏8"))
-        self.comboBox_station.setItemText(29, _translate("MainWindow", "光伏9"))
-        self.comboBox_station.setItemText(30, _translate("MainWindow", "光伏10"))
-        self.comboBox_station.setItemText(31, _translate("MainWindow", "光伏11"))
-        self.comboBox_station.setItemText(32, _translate("MainWindow", "光伏12"))
-        self.comboBox_station.setItemText(33, _translate("MainWindow", "光伏13"))
-        self.comboBox_station.setItemText(34, _translate("MainWindow", "光伏14"))
-        self.comboBox_station.setItemText(35, _translate("MainWindow", "光伏15"))
-        self.comboBox_station.setItemText(36, _translate("MainWindow", "光伏16"))
-        self.comboBox_station.setItemText(37, _translate("MainWindow", "光伏17"))
-        self.comboBox_station.setItemText(38, _translate("MainWindow", "光伏18"))
-        self.comboBox_station.setItemText(39, _translate("MainWindow", "光伏19"))
-        self.comboBox_station.setItemText(40, _translate("MainWindow", "光伏20"))
-        self.comboBox_station.setItemText(41, _translate("MainWindow", "光伏21"))
         self.label_7.setText(_translate("MainWindow",
                                         "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">导入数据类型：</span></p></body></html>"))
         self.comboBox_datatype.setItemText(1, _translate("MainWindow", "功率"))
-        self.comboBox_datatype.setItemText(2, _translate("MainWindow", "NWP温度"))
-        self.comboBox_datatype.setItemText(3, _translate("MainWindow", "NWP风速"))
-        self.comboBox_datatype.setItemText(4, _translate("MainWindow", "NWP辐照度"))
+        self.comboBox_datatype.setItemText(2, _translate("MainWindow", "NWP风速"))
 
         ########################
         # added
@@ -565,54 +452,11 @@ class Ui_MainWindow_show_plot(object):
         self.comboBox_station_added.setItemText(3, _translate("MainWindow", "风电3"))
         self.comboBox_station_added.setItemText(4, _translate("MainWindow", "风电4"))
         self.comboBox_station_added.setItemText(5, _translate("MainWindow", "风电5"))
-        self.comboBox_station_added.setItemText(6, _translate("MainWindow", "风电6"))
-        self.comboBox_station_added.setItemText(7, _translate("MainWindow", "风电7"))
-        self.comboBox_station_added.setItemText(8, _translate("MainWindow", "风电8"))
-        self.comboBox_station_added.setItemText(9, _translate("MainWindow", "风电9"))
-        self.comboBox_station_added.setItemText(10, _translate("MainWindow", "风电10"))
-        self.comboBox_station_added.setItemText(11, _translate("MainWindow", "风电11"))
-        self.comboBox_station_added.setItemText(12, _translate("MainWindow", "风电12"))
-        self.comboBox_station_added.setItemText(13, _translate("MainWindow", "风电13"))
-        self.comboBox_station_added.setItemText(14, _translate("MainWindow", "风电14"))
-        self.comboBox_station_added.setItemText(15, _translate("MainWindow", "风电15"))
-        self.comboBox_station_added.setItemText(16, _translate("MainWindow", "风电16"))
-        self.comboBox_station_added.setItemText(17, _translate("MainWindow", "风电17"))
-        self.comboBox_station_added.setItemText(18, _translate("MainWindow", "风电18"))
-        self.comboBox_station_added.setItemText(19, _translate("MainWindow", "风电19"))
-        self.comboBox_station_added.setItemText(20, _translate("MainWindow", "风电20"))
-        self.comboBox_station_added.setItemText(21, _translate("MainWindow", "光伏1"))
-        self.comboBox_station_added.setItemText(22, _translate("MainWindow", "光伏2"))
-        self.comboBox_station_added.setItemText(23, _translate("MainWindow", "光伏3"))
-        self.comboBox_station_added.setItemText(24, _translate("MainWindow", "光伏4"))
-        self.comboBox_station_added.setItemText(25, _translate("MainWindow", "光伏5"))
-        self.comboBox_station_added.setItemText(26, _translate("MainWindow", "光伏6"))
-        self.comboBox_station_added.setItemText(27, _translate("MainWindow", "光伏7"))
-        self.comboBox_station_added.setItemText(28, _translate("MainWindow", "光伏8"))
-        self.comboBox_station_added.setItemText(29, _translate("MainWindow", "光伏9"))
-        self.comboBox_station_added.setItemText(30, _translate("MainWindow", "光伏10"))
-        self.comboBox_station_added.setItemText(31, _translate("MainWindow", "光伏11"))
-        self.comboBox_station_added.setItemText(32, _translate("MainWindow", "光伏12"))
-        self.comboBox_station_added.setItemText(33, _translate("MainWindow", "光伏13"))
-        self.comboBox_station_added.setItemText(34, _translate("MainWindow", "光伏14"))
-        self.comboBox_station_added.setItemText(35, _translate("MainWindow", "光伏15"))
-        self.comboBox_station_added.setItemText(36, _translate("MainWindow", "光伏16"))
-        self.comboBox_station_added.setItemText(37, _translate("MainWindow", "光伏17"))
-        self.comboBox_station_added.setItemText(38, _translate("MainWindow", "光伏18"))
-        self.comboBox_station_added.setItemText(39, _translate("MainWindow", "光伏19"))
-        self.comboBox_station_added.setItemText(40, _translate("MainWindow", "光伏20"))
-        self.comboBox_station_added.setItemText(41, _translate("MainWindow", "光伏21"))
         self.label_7_added.setText(_translate("MainWindow",
                                         "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">导入数据类型：</span></p></body></html>"))
         self.comboBox_datatype_added.setItemText(1, _translate("MainWindow", "功率"))
-        self.comboBox_datatype_added.setItemText(2, _translate("MainWindow", "NWP温度"))
-        self.comboBox_datatype_added.setItemText(3, _translate("MainWindow", "NWP风速"))
-        self.comboBox_datatype_added.setItemText(4, _translate("MainWindow", "NWP辐照度"))
+        self.comboBox_datatype_added.setItemText(2, _translate("MainWindow", "NWP风速"))
 
-        # self.label_choose_dataset.setText(_translate("MainWindow",
-        #                                              "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">数据源：</span></p></body></html>"))
-        #
-        # self.comboBox_datasource.setItemText(1, _translate("MainWindow", "吉林"))
-        # self.comboBox_datasource.setItemText(2, _translate("MainWindow", "内蒙"))
 
         ####################
 
@@ -626,6 +470,7 @@ class Ui_MainWindow_show_plot(object):
 
         self.pushButton.setText(_translate("MainWindow", "导入数据"))
         self.pushButton2.setText(_translate("MainWindow", "动态播放"))
+
         self.pushButton3.setText(_translate("MainWindow", "异常数据识别"))
 
     def get_data_name(self, i):
@@ -641,6 +486,7 @@ class Ui_MainWindow_show_plot(object):
     def get_data_name_added(self, i):
         # 获取数据类型
         global series_data_added
+
         series_data_added = i
 
     def get_station_name_added(self, i):
@@ -672,7 +518,7 @@ class Ui_MainWindow_show_plot(object):
                 # 导入光伏数据
                 if station_[:2] == "光伏":
                     # TODO
-                    openfile_name_ = 'Time_series_data/JILIN/Solar/Power/'
+                    openfile_name_ = 'Time_series_data/NEIMENG/Solar/Power/'
                     input_data = pd.read_csv(
                         openfile_name_ +
                         '/' +
@@ -684,13 +530,15 @@ class Ui_MainWindow_show_plot(object):
                     # print(input_data[:10])
                 elif station_[:2] == "风电":
                     # TODO
-                    Power = scio.loadmat("Time_series_data/JILIN/Wind/wind_power_jilin.mat")
-                    print('load_sucess')
-                    df_wind_power = pd.DataFrame(Power['Power'])
-                    print('generate df_wind_power sucess')
-                    df_wind_power.index = pd.date_range(start='2017-01-01', periods=len(df_wind_power[0]), freq='15min')
-                    print('generate df_wind_power index sucess')
-                    input_data = pd.DataFrame(df_wind_power.iloc[:,int(station_[2:])-1])
+                    openfile_name_ = 'Time_series_data/NEIMENG/Wind'
+                    Data = pd.read_csv(
+                        openfile_name_ +
+                        '/Farm' +
+                        station_[2:] +
+                        '.csv',
+                        index_col=2,
+                        parse_dates=True)
+                    input_data = pd.DataFrame(Data.loc[:,"Power"])
                     input_data.columns = ['power']
                     print('generate input data sucess')
 
@@ -719,58 +567,37 @@ class Ui_MainWindow_show_plot(object):
                             521: 'CN0688'}
                     # TODO
                     # change openfile
-                    path_openfile_name = 'Time_series_data/JILIN/Solar/NWP/'
+                    path_openfile_name = 'Time_series_data/NEIMENG/Solar/NWP/'
                     input_data = pd.read_csv(path_openfile_name +
                                              dict[int(station_[2:])+500] +
                                              '.csv', index_col=2, parse_dates=True)
                     # print(input_data[:10])
                     if data_[3:] == '风速':
                         input_data = pd.DataFrame(input_data['windspeed_30'])
-                    elif data_[3:] == '温度':
-                        input_data = pd.DataFrame(input_data['temperature'])
-                    elif data_[3:] == '辐照度':
-                        input_data_added = pd.DataFrame(input_data['shortwave_radiation'])
-                    print('generate input data sucess')
 
+                    print('generate input data sucess')
                 elif station_[:2] == "风电":
-                    dict = {1: 'CN0001',
-                            2: 'CN0002',
-                            3: 'CN0003',
-                            4: 'CN0004',
-                            5: 'CN0005',
-                            6: 'CN0006',
-                            7: 'CN0001',
-                            8: 'CN0360',
-                            9: 'CN0090',
-                            10: 'CN0091',
-                            11: 'CN0001',
-                            12: 'CN0092',
-                            13: 'CN0096',
-                            14: 'CN0093',
-                            15: 'CN0094',
-                            16: 'CN0095',
-                            17: 'CN0356',
-                            18: 'CN0121',
-                            19: 'CN0138',
-                            20: 'CN0137'}
-                    # TODO
-                    # change openfile
-                    path_openfile_name = 'Time_series_data/JILIN/Solar/NWP/'
-                    input_data = pd.read_csv(path_openfile_name +
-                                             dict[int(station_[2:])] +
-                                             '.csv', index_col=2, parse_dates=True)
+                    openfile_name_ = 'Time_series_data/NEIMENG/Wind'
+                    Data = pd.read_csv(
+                        openfile_name_ +
+                        '/Farm' +
+                        station_[2:] +
+                        '.csv',
+                        index_col=2,
+                        parse_dates=True)
+
                     # print(input_data[:10])
                     if data_[3:] == '风速':
-                        input_data = pd.DataFrame(input_data['windspeed_30'])
-                    elif data_[3:] == '温度':
-                        input_data = pd.DataFrame(input_data['temperature'])
-                    elif data_[3:] == '辐照度':
-                        input_data_added = pd.DataFrame(input_data['shortwave_radiation'])
+                        input_data = pd.DataFrame(Data.loc[:, "WS"])
+                        input_data.columns = ['windspeed_30']
 
         except NameError:
             pass
 
     def load_data_added(self):
+
+        print("station_added",station_added)
+        print('series_data_added',series_data_added)
 
         global input_data_added
 
@@ -780,7 +607,7 @@ class Ui_MainWindow_show_plot(object):
                 # 导入光伏数据
                 if station_added[:2] == "光伏":
                     # TODO
-                    openfile_name_ = 'Time_series_data/JILIN/Solar/Power/'
+                    openfile_name_ = 'Time_series_data/NEIMENG/Solar/Power/'
                     input_data_added = pd.read_csv(
                         openfile_name_ +
                         '/' +
@@ -792,17 +619,20 @@ class Ui_MainWindow_show_plot(object):
                     # print(input_data[:10])
                 elif station_added[:2] == "风电":
                     # TODO
-                    Power = scio.loadmat("Time_series_data/JILIN/Wind/wind_power_jilin.mat")
-                    print('load_sucess')
-                    df_wind_power = pd.DataFrame(Power['Power'])
-                    print('generate df_wind_power sucess')
-                    df_wind_power.index = pd.date_range(start='2017-01-01', periods=len(df_wind_power[0]), freq='15min')
-                    print('generate df_wind_power index sucess')
-                    input_data_added = pd.DataFrame(df_wind_power.iloc[:,int(station_added[2:])-1])
+                    openfile_name_ = 'Time_series_data/NEIMENG/Wind'
+                    Data = pd.read_csv(
+                        openfile_name_ +
+                        '/Farm' +
+                        station_[2:] +
+                        '.csv',
+                        index_col=2,
+                        parse_dates=True)
+                    input_data_added = pd.DataFrame(Data.loc[:,"Power"])
                     input_data_added.columns = ['power']
                     print('generate input data sucess')
 
             elif series_data_added[:3] == "NWP":
+
                 # 导入NWP
                 if station_added[:2] == "光伏":
                     dict = {501: 'CN0094',
@@ -827,7 +657,7 @@ class Ui_MainWindow_show_plot(object):
                             521: 'CN0688'}
                     # TODO
                     # change openfile
-                    path_openfile_name = 'Time_series_data/JILIN/Solar/NWP/'
+                    path_openfile_name = 'Time_series_data/NEIMENG/Solar/NWP/'
                     input_data_added = pd.read_csv(path_openfile_name +
                                              dict[int(station_added[2:])+500] +
                                              '.csv', index_col=2, parse_dates=True)
@@ -839,44 +669,25 @@ class Ui_MainWindow_show_plot(object):
                     elif series_data_added[3:] == '辐照度':
                         input_data_added = pd.DataFrame(input_data_added['shortwave_radiation'])
                     print('generate input data sucess')
-
                 elif station_added[:2] == "风电":
-                    dict = {1: 'CN0001',
-                            2: 'CN0002',
-                            3: 'CN0003',
-                            4: 'CN0004',
-                            5: 'CN0005',
-                            6: 'CN0006',
-                            7: 'CN0001',
-                            8: 'CN0360',
-                            9: 'CN0090',
-                            10: 'CN0091',
-                            11: 'CN0001',
-                            12: 'CN0092',
-                            13: 'CN0096',
-                            14: 'CN0093',
-                            15: 'CN0094',
-                            16: 'CN0095',
-                            17: 'CN0356',
-                            18: 'CN0121',
-                            19: 'CN0138',
-                            20: 'CN0137'}
-                    # TODO
-                    # change openfile
-                    path_openfile_name = 'Time_series_data/JILIN/Solar/NWP/'
-                    input_data_added = pd.read_csv(path_openfile_name +
-                                             dict[int(station_added[2:])] +
-                                             '.csv', index_col=2, parse_dates=True)
+                    openfile_name_ = 'Time_series_data/NEIMENG/Wind'
+                    Data = pd.read_csv(
+                        openfile_name_ +
+                        '/Farm' +
+                        station_added[2:] +
+                        '.csv',
+                        index_col=2,
+                        parse_dates=True)
+                    print('added Data sucess')
+
                     # print(input_data[:10])
                     if series_data_added[3:] == '风速':
-                        input_data_added = pd.DataFrame(input_data_added['windspeed_30'])
-                    elif series_data_added[3:] == '温度':
-                        input_data_added = pd.DataFrame(input_data_added['temperature'])
-                    elif series_data_added[3:] == '辐照度':
-                        input_data_added = pd.DataFrame(input_data_added['shortwave_radiation'])
-
+                        input_data_added = pd.DataFrame(Data.loc[:, "WS"])
+                        input_data_added.columns = ['windspeed_30']
+                        print('input_data_added')
         except NameError:
             pass
+
 
     def str_datetime(self, t):
         import datetime
@@ -910,7 +721,6 @@ class Ui_MainWindow_show_plot(object):
         start_time = self.dateTimeEdit_start.text()
         end_time = self.dateTimeEdit_end.text()
 
-        global data_to_plot
         data_to_plot = []
 
         # try:
@@ -927,17 +737,20 @@ class Ui_MainWindow_show_plot(object):
         #     # 任意数据
         #     input_data = []
 
-        try:
-            data_to_plot.append(input_data)
-        except NameError:
-            pass
+        data_to_plot.append(input_data)
+        data_to_plot.append(input_data_added)
+        # try:
+        #     data_to_plot.append(input_data)
+        #     print('data1 append sucess')
+        # except NameError:
+        #     pass
+        #
+        # try:
+        #     data_to_plot.append(input_data_added)
+        #     print('data2 append sucess')
+        # except NameError:
+        #     pass
 
-        try:
-            data_to_plot.append(input_data_added)
-        except NameError:
-            pass
-
-        print('data append sucess')
         print('len(data_to_plot):',len(data_to_plot))
 
         self.m.update_figure(
@@ -974,9 +787,6 @@ class Ui_MainWindow_show_plot(object):
             flag = data_to_detect.diff()
             flag = np.abs(flag)
 
-            if station_[:2] == "光伏":
-                flag = flag[(flag.index.time > datetime.time(7, 0)) & (flag.index.time < datetime.time(19, 0))]
-
             for row in flag.iterrows():
 
                 if row[1][0] < 0.01:
@@ -986,9 +796,9 @@ class Ui_MainWindow_show_plot(object):
                     time_abnormal = time_abnormal + cache
                     cache = []
 
-            pd.DataFrame(time_abnormal).to_csv('异常数据检测结果_吉林/'+station_+'_'+data_+'_'+'异常数据检测结果_吉林.txt', sep='\t', index=False, header=None)
+            pd.DataFrame(time_abnormal).to_csv('异常数据检测结果_内蒙/'+station_+'_'+data_+'_'+'异常数据检测结果_内蒙.txt', sep='\t', index=False, header=None)
 
-            with open('异常数据检测结果_吉林/'+station_+'_'+data_+'_'+'异常数据检测结果_吉林.txt', 'r+') as f:
+            with open('异常数据检测结果_内蒙/'+station_+'_'+data_+'_'+'异常数据检测结果_内蒙.txt', 'r+') as f:
                 content = f.read()
                 f.seek(0, 0)
                 f.write('检测到%d个时刻数据异常，分别如下\n'%len(time_abnormal) + content)
@@ -996,7 +806,9 @@ class Ui_MainWindow_show_plot(object):
         except NameError:
             pass
 
-class MyWindow_show_plot(QMainWindow, Ui_MainWindow_show_plot):
+
+
+class MyWindow_show_plot(QMainWindow, Ui_MainWindow_show_plot_NeiMeng):
     def __init__(self, parent=None):
         super(MyWindow_show_plot, self).__init__(parent)
         self.setupUi(self)

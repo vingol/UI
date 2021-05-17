@@ -7,6 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 import base64
+from UI_show_plot import *
+from UI_show_plot_NeiMeng import *
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from images.location_of_plants_in_jilin_png import img as location_of_plants_in_jilin
 from images.wind_plant_jilin_png import img as wind_plant_jilin
 import pandas as pd
@@ -27,6 +30,16 @@ tmp.close()
 tmp = open('images/wind_plant_jilin.png', 'wb')  # 创建临时的文件
 tmp.write(base64.b64decode(wind_plant_jilin))  ##把这个one图片解码出来，写入文件中去。
 tmp.close()
+
+class MyWindow_show_plot(QMainWindow, Ui_MainWindow_show_plot):
+    def __init__(self, parent=None):
+        super(MyWindow_show_plot, self).__init__(parent)
+        self.setupUi(self)
+
+class MyWindow_show_plot_NeiMeng(QMainWindow, Ui_MainWindow_show_plot_NeiMeng):
+    def __init__(self, parent=None):
+        super(MyWindow_show_plot_NeiMeng, self).__init__(parent)
+        self.setupUi(self)
 
 class PlotCanvas(FigureCanvas):
 
@@ -147,9 +160,12 @@ class PlotCanvas(FigureCanvas):
 
         self.draw()
 
-
 class Ui_MainWindow(object):
+
+    signal = pyqtSignal(str)
+
     def setupUi(self, MainWindow):
+
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -240,14 +256,17 @@ class Ui_MainWindow(object):
         self.pushButton_2.clicked.connect(self.openfile)
         self.pushButton_2.clicked.connect(self.creat_table_show)
 
+        self.pushButton_3.clicked.connect(self.show_Window_show_plot)
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow",
-                                      "<html><head/><body><p><span style=\" font-size:24pt;\">风电/光伏发电功率超短期预测模块</span></p><p><br/></p></body></html>"))
+                                      "<html><head/><body><p><span style=\" font-size:24pt;\">风光超短期预测基础数据平台</span></p><p><br/></p></body></html>"))
         self.label_choose_dataset.setText(_translate("MainWindow",
                                         "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">数据源：</span></p></body></html>"))
 
@@ -264,9 +283,33 @@ class Ui_MainWindow(object):
         # self.pushButton_6.setText(_translate("MainWindow", "风电预测统计"))
         # self.pushButton_8.setText(_translate("MainWindow", "光伏预测统计"))
 
+    def show_Window_show_plot(self):
+
+        try:
+
+            if data_source == '吉林':
+                self.Window_show_plot = MyWindow_show_plot()
+                self.Window_show_plot.show()
+
+            elif data_source == '内蒙':
+                self.Window_show_plot_NeiMeng = MyWindow_show_plot_NeiMeng()
+                self.Window_show_plot_NeiMeng.show()
+
+        except NameError:
+            self.Window_show_plot = MyWindow_show_plot()
+            self.Window_show_plot.show()
+
+
     def get_data_source(self, i):
+
         global data_source
         data_source = i
+
+        self.signal.emit(data_source)
+
+        import pickle
+        with open('main_win_data/data_source.pkl', 'wb') as f:
+            pickle.dump(data_source, f)
 
     def slot_solar(self):
         # self.graphicsView.setStyleSheet(
